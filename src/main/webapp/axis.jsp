@@ -16,7 +16,7 @@
 <body>
 <section class="block plot-section">
   <div class="axis">
-    <svg height="300" width="300" xmlns="http://www.w3.org/2000/svg">
+    <svg height="300" width="300" xmlns="http://www.w3.org/2000/svg" id="axis-svg">
       <!-- ось x -->
       <line x1="0" x2="300" y1="150" y2="150" stroke="white"></line>
       <!-- ось y -->
@@ -63,17 +63,17 @@
       <text fill="white" x="160" y="10">Y</text>
       <text fill="white" x="290" y="140">X</text>
 
-      <!-- прямоугольник справа вверху -->
-      <rect x="150" y="50" width="100" height="100" fill="white" fill-opacity="0.2" stroke="white">
+      <!-- прямоугольник слева вверху -->
+      <rect x="100" y="50" width="50" height="100" fill="white" fill-opacity="0.2" stroke="white" id="rect">
       </rect>
-      <!-- треугольник слева снизу -->
-      <polygon fill="white" fill-opacity="0.2" points="50,150 150,250 150, 150" stroke="white">
+      <!-- треугольник справа вверху -->
+      <polygon fill="white" fill-opacity="0.2" points="150,150 200,150 150, 50" stroke="white">
       </polygon>
-      <!-- полукруг справа снизу -->
-      <path d="M 200 150 A 100, 100, 0, 0, 1, 150 200 L 150 150 Z" fill-opacity="0.2" fill="white"
+      <!-- полукруг слева снизу -->
+      <path d="M 50 150 A 100, 100, 0, 0, 0, 150 250 L 150 150 Z" fill-opacity="0.2" fill="white"
             stroke="white"></path>
     </svg>
-    <div class='coordinates' id='coordinates' style="color:#2C2F33">TEST</div>
+    <div class='coordinates' id='coordinates'></div>
   </div>
 </section>
 </body>

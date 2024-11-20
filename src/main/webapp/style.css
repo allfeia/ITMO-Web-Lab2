@@ -1,0 +1,102 @@
+/* селекторы элементов + наследование ко всем заголовкам*/
+body{
+    background: #000;
+    color: #FFF;
+    text-align: center;
+    font-family: fantasy;
+}
+button{
+    padding: 20px 60px;
+    margin: 30px;
+    border-color: #FFF;
+    background-color: #000;
+    color: #FFF;
+    cursor: pointer;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+/* селектор псевдокласса */
+button:hover {
+    background-color: #FFF;
+    color: #000;
+}
+/* селектор потомств */
+.header{
+    text-align: center;
+    color: #FFF;
+}
+.header h1{
+    font-size: 20px;
+    margin: -5px;
+}
+.header h3{
+    font-size: 10px;
+    margin: -5px;
+}
+/* селекторы классов */
+.container {
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.left-block {
+    padding: 10px;
+    left: 10%;
+}
+#axis {
+    width: 30%;
+    padding: 10px;
+    left: 10%;
+    align-content: center;
+}
+text{
+    font-size: 7px;
+}
+.right-block {
+    padding: 10px;
+}
+/* селектор дочерних элементов */
+.right-block > h4{
+    font-family:'Times New Roman', Times, serif;
+}
+.select select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 0;
+    display: block;
+}
+
+.error-label{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+/* каскадирование */
+h1.results{
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+/* отсутупы элементов ввода задаются в пикселях */
+input[type="text"]{
+    padding: 10px;
+}
+
+
