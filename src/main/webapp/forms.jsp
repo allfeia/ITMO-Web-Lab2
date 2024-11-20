@@ -41,10 +41,6 @@
 <div class="select">
     <select name="R" id="r-select">
         <option value="">--Please choose an option--</option>
-        <option value="-3">-3</option>
-        <option value="-2">-2</option>
-        <option value="-1">-1</option>
-        <option value="0">0</option>
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>

@@ -156,12 +156,21 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     svg.addEventListener('click', function(event) {
+
+        removeError(document.getElementById('axis-svg')); // Убираем предыдущие ошибки
+
+        const r = document.getElementById('r-select').value;
+
+        if (r === "") {
+            createError(document.getElementById('axis-svg'), "Please choose the radius R");
+            return; // Останавливаем выполнение, если радиус не выбран
+        }
+
         // Получаем координаты клика
         const rect = svg.getBoundingClientRect();
         const cx = event.clientX - rect.left;
         const cy = event.clientY - rect.top;
 
-        const r = 5;
         const x = ((cx-150)/100*r).toFixed(2);
         const y = ((cy-150)/100*-1*r).toFixed(2);
 

@@ -75,11 +75,6 @@ text{
     display: block;
 }
 
-.error-label{
-    display: block;
-    margin-bottom: 20px;
-}
-
 .hidden {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
